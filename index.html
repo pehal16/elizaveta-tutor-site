@@ -10,19 +10,17 @@
     />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f4d3d'/%3E%3Cpath d='M20 42c13-1 22-10 24-24-13 1-22 10-24 24Z' fill='white'/%3E%3Cpath d='M18 24c8 1 14 7 15 15-8-1-14-7-15-15Z' fill='%23cdeade'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b3f33'/%3E%3Cpath d='M18 45c14-2 25-13 28-28-15 2-25 12-28 28Z' fill='white'/%3E%3Cpath d='M16 24c9 1 15 8 16 17-9-1-15-8-16-17Z' fill='%23d7eadf'/%3E%3C/svg%3E"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="На главную">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 36 36">
-            <path d="M18 30c7.8-.8 13.2-6.6 14-18-8 .8-13.5 6.8-14 18Z" />
-            <path d="M6 13c6.8.4 11.4 5.1 12 12.5C11.3 24.9 6.8 20.2 6 13Z" />
-          </svg>
-        </span>
+        <svg class="brand__mark" aria-hidden="true" viewBox="0 0 40 40">
+          <path d="M19 34c9-.9 15.6-8.1 16.8-22.8C26.3 12.1 20 19.7 19 34Z" />
+          <path d="M6 14.5c7.6.7 12.6 6.1 13.2 14.7C11.7 28.4 6.8 23 6 14.5Z" />
+        </svg>
         <span>
           <span class="brand__name">Елизавета Александровна</span>
           <span class="brand__role">русский язык и литература</span>
@@ -30,10 +28,10 @@
       </a>
 
       <nav class="nav" aria-label="Основная навигация">
+        <a href="#help">Помощь</a>
+        <a href="#lesson">Занятия</a>
         <a href="#about">Обо мне</a>
-        <a href="#method">Как проходят занятия</a>
-        <a href="#trial">Пробное занятие</a>
-        <a href="#faq">Вопросы</a>
+        <a href="#contact">Запись</a>
       </nav>
 
       <a class="header-cta" href="#contact">Записаться</a>
@@ -44,34 +42,12 @@
         <div class="hero__copy">
           <h1 id="hero-title">Русский язык и литература без тревоги и пробелов</h1>
           <p class="hero__lead">
-            Индивидуальные онлайн-занятия для учеников 4-7 классов. Разбираем сложные
-            темы спокойно, наглядно и с понятным планом движения.
+            Онлайн-занятия для учеников 4-7 классов: спокойно разбираем правила,
+            тексты и домашние задания, чтобы ребёнок понимал предмет, а не просто
+            заучивал.
           </p>
 
-          <div class="hero__features" aria-label="Формат занятий">
-            <span>
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <rect x="4" y="5" width="16" height="11" rx="1.5" />
-                <path d="M8 20h8M12 16v4" />
-              </svg>
-              Онлайн
-            </span>
-            <span>
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z" />
-                <path d="m13.5 7.5 3 3" />
-              </svg>
-              Графический планшет
-            </span>
-            <span>
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M8 2v4M16 2v4M4 9h16M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
-              </svg>
-              4-7 классы
-            </span>
-          </div>
-
-          <div class="hero__actions" aria-label="Быстрые действия">
+          <div class="hero__actions">
             <a class="button button--primary" href="#contact">
               <span>Записаться на бесплатное занятие</span>
               <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -79,7 +55,7 @@
               </svg>
             </a>
             <a
-              class="button button--text"
+              class="button button--quiet"
               href="https://www.avito.ru/krasnodar/predlozheniya_uslug/repetitor_po_russkomu_yazyku_i_literature_7985501375?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing_seller"
               target="_blank"
               rel="noreferrer"
@@ -89,196 +65,141 @@
           </div>
         </div>
 
-        <div class="hero__visual">
-          <figure class="portrait-card">
-            <img src="./assets/elizaveta-portrait.png" alt="Елизавета Александровна" />
-          </figure>
-          <aside class="proof-card" aria-label="Опыт и образование">
-            <div>
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="m3 10 9-5 9 5-9 5-9-5Z" />
-                <path d="M7 12.5V17c0 1.1 2.2 2 5 2s5-.9 5-2v-4.5" />
-              </svg>
-              <span>Высшее педагогическое образование</span>
-            </div>
-            <div>
-              <strong>5 лет</strong>
-              <span>опыта репетитором</span>
-            </div>
-            <div>
-              <strong>4 года</strong>
-              <span>работы в образовательном учреждении</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="trust-line" aria-label="Принципы работы">
-        <div>
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M19 14c0 4-3 7-7 7s-7-3-7-7V7l7-4 7 4v7Z" />
-            <path d="m9 12 2 2 4-5" />
-          </svg>
-          <span>Спокойная атмосфера и уважение к ученику</span>
-        </div>
-        <div>
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M5 4h14v16H5z" />
-            <path d="M9 8h6M9 12h6M9 16h4" />
-          </svg>
-          <span>Объясняю просто и по делу</span>
-        </div>
-        <div>
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="7" />
-            <path d="M12 3v4M12 17v4M3 12h4M17 12h4" />
-          </svg>
-          <span>Сильная система и понятный план</span>
-        </div>
-        <div>
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="m12 3 2.7 5.7 6.3.8-4.6 4.4 1.2 6.1-5.6-3-5.6 3 1.2-6.1L3 9.5l6.3-.8L12 3Z" />
-          </svg>
-          <span>Результат через регулярную практику</span>
-        </div>
-      </section>
-
-      <section class="section help" id="help" aria-labelledby="help-title">
-        <div class="section__intro">
-          <span class="section__label">С чем помогаю</span>
-          <h2 id="help-title">Разберём сложное и добьёмся уверенности</h2>
-        </div>
-
-        <div class="help-grid">
-          <article>
-            <span class="icon-circle">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M7 3h7l4 4v14H7V3Z" />
-                <path d="M14 3v5h5M9 12h6M9 16h6" />
-              </svg>
-            </span>
-            <h3>Подготовка к ВПР</h3>
-            <p>Системно готовимся к проверочным работам: разбираем формат, закрепляем навыки.</p>
-          </article>
-          <article>
-            <span class="icon-circle">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" />
-                <path d="M8 8h7M8 12h5" />
-              </svg>
-            </span>
-            <h3>Разбор сложных тем</h3>
-            <p>Докручиваем объяснение даже трудных тем, опираясь на примеры и практику.</p>
-          </article>
-          <article>
-            <span class="icon-circle">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z" />
-                <path d="m13.5 7.5 3 3" />
-              </svg>
-            </span>
-            <h3>Домашние задания</h3>
-            <p>Помогаю разобраться в школьной программе и выполнять задания качественно.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="method" aria-labelledby="method-title">
-        <figure class="lesson-photo">
-          <img
-            src="./assets/lesson-with-child.png"
-            alt="Онлайн-занятие с ребёнком и графическим планшетом"
-          />
+        <figure class="hero__portrait">
+          <img src="./assets/elizaveta-portrait.png" alt="Елизавета Александровна" />
+          <figcaption>
+            <span>Онлайн-формат</span>
+            <strong>с графическим планшетом</strong>
+          </figcaption>
         </figure>
 
-        <div class="method-panel">
-          <span class="section__label">Как проходят занятия</span>
-          <h2 id="method-title">Не просто объясняем правило, а учимся применять его</h2>
-          <div class="method-list">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Диагностика и план</h3>
-                <p>Определяем уровень знаний и цели, составляем план работы.</p>
-              </div>
-            </article>
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Объяснение и практика</h3>
-                <p>Понятные объяснения, примеры и тренировка на заданиях.</p>
-              </div>
-            </article>
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Закрепление и контроль</h3>
-                <p>Отрабатываем материал и проверяем, что ученик справляется сам.</p>
-              </div>
-            </article>
-            <article>
-              <span>04</span>
-              <div>
-                <h3>Поддержка</h3>
-                <p>Отвечаю на вопросы между занятиями и даю рекомендации.</p>
-              </div>
-            </article>
+        <div class="hero__facts" aria-label="Ключевые факты">
+          <div>
+            <span>Образование</span>
+            <strong>Высшее педагогическое</strong>
+          </div>
+          <div>
+            <span>Опыт</span>
+            <strong>5 лет репетитором</strong>
+          </div>
+          <div>
+            <span>Пробное</span>
+            <strong>40-60 минут бесплатно</strong>
+          </div>
+          <div>
+            <span>Классы</span>
+            <strong>4-7</strong>
           </div>
         </div>
       </section>
 
-      <section class="about-trial" id="about" aria-label="О репетиторе и первое занятие">
-        <article class="about-card">
-          <span class="section__label">Обо мне</span>
-          <h2>О себе</h2>
+      <section class="editorial-line" aria-label="Подход">
+        <p>Сначала снимаем напряжение, потом закрываем пробелы и собираем понятную систему.</p>
+      </section>
+
+      <section class="spread help-spread" id="help" aria-labelledby="help-title">
+        <div class="spread__intro">
+          <span class="section-label">С чем помогаю</span>
+          <h2 id="help-title">Сложное становится рабочим, когда у темы появляется структура</h2>
+        </div>
+
+        <div class="help-columns">
+          <article>
+            <span>01</span>
+            <h3>Подготовка к ВПР</h3>
+            <p>Разбираем формат, тренируем типовые задания и закрепляем навык без гонки и паники.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Сложные темы</h3>
+            <p>Орфография, пунктуация, части речи и синтаксис превращаются в понятные шаги.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Домашние задания</h3>
+            <p>Не просто “делаем задание”, а разбираем, как ученик сможет повторить это сам.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-feature" id="lesson" aria-labelledby="lesson-title">
+        <figure class="lesson-feature__photo">
+          <img src="./assets/lesson-with-child.png" alt="Занятие с ребёнком и графическим планшетом" />
+        </figure>
+
+        <div class="lesson-feature__text">
+          <span class="section-label">Как проходят занятия</span>
+          <h2 id="lesson-title">На экране видно не только ответ, но и ход мысли</h2>
           <p>
-            Я репетитор по русскому языку и литературе с большим опытом работы как с
-            подростками, так и с детьми. Мне важно, чтобы ученик не боялся ошибаться
-            и видел прогресс шаг за шагом.
+            Графический планшет помогает прямо во время урока разбирать предложения,
+            выделять ошибки, строить схемы и возвращаться к ним в практике.
           </p>
-          <ul>
-            <li>Высшее педагогическое образование: ДГПУ им. В. Шаталова</li>
-            <li>5 лет опыта репетиторства</li>
-            <li>4 года работы в образовательном учреждении</li>
-          </ul>
+
+          <ol class="process-list">
+            <li>
+              <strong>Диагностика</strong>
+              <span>Определяем уровень и темы, где нужна опора.</span>
+            </li>
+            <li>
+              <strong>Объяснение</strong>
+              <span>Разбираем правило на примерах и сразу применяем.</span>
+            </li>
+            <li>
+              <strong>Закрепление</strong>
+              <span>Проверяем, что ученик справляется самостоятельно.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="about-trial" id="about" aria-label="О репетиторе и пробное занятие">
+        <article class="about-block">
+          <span class="section-label">О репетиторе</span>
+          <h2>Спокойная подача, педагогическая база и внимание к ребёнку</h2>
+          <p>
+            Я Елизавета Александровна, репетитор по русскому языку и литературе.
+            Мне важно, чтобы ребёнок не боялся вопросов и постепенно видел:
+            предмет можно понять.
+          </p>
+          <div class="about-facts">
+            <span>ДГПУ им. В. Шаталова</span>
+            <span>5 лет репетиторства</span>
+            <span>4 года в образовательном учреждении</span>
+          </div>
         </article>
 
-        <article class="trial-card" id="trial">
-          <span class="section__label">Первое занятие</span>
-          <h2>Пробное занятие бесплатно</h2>
-          <p>40-60 минут полезного знакомства: определим уровень, обсудим цели и составим план работы.</p>
-          <div class="trial-steps">
-            <span>Знакомимся</span>
-            <span>Определяем уровень</span>
-            <span>Составляем план</span>
-          </div>
+        <article class="trial-block" id="trial">
+          <span class="section-label">Первое занятие</span>
+          <h2>Бесплатная диагностика 40-60 минут</h2>
+          <p>Познакомимся, определим уровень знаний, обсудим цели и составим понятный план работы.</p>
           <a class="button button--primary" href="#contact">Записаться на бесплатное занятие</a>
         </article>
       </section>
 
       <section class="faq-contact" id="faq" aria-label="Вопросы и запись">
         <div class="faq-block">
-          <span class="section__label">Частые вопросы</span>
-          <h2>Вопросы перед стартом</h2>
+          <span class="section-label">Вопросы</span>
+          <h2>Перед стартом</h2>
           <div class="faq-list">
             <details>
               <summary>Как проходит онлайн-занятие?</summary>
               <p>Встречаемся онлайн, разбираем тему на экране, используем графический планшет, задания и понятные схемы.</p>
             </details>
             <details>
-              <summary>Сколько занятий в неделю нужно?</summary>
-              <p>Зависит от цели и текущего уровня. После диагностики можно выбрать комфортный темп.</p>
-            </details>
-            <details>
               <summary>Подойдёт ли, если есть большие пробелы?</summary>
               <p>Да. Начинаем с того места, где стало сложно, и выстраиваем базу без давления.</p>
+            </details>
+            <details>
+              <summary>Сколько занятий в неделю нужно?</summary>
+              <p>Зависит от цели и текущего уровня. После диагностики можно выбрать комфортный темп.</p>
             </details>
           </div>
         </div>
 
         <aside class="contact-card" id="contact">
+          <span>Запись</span>
           <h2>Готовы начать?</h2>
-          <p>Выберите удобный способ записаться на бесплатное занятие.</p>
+          <p>Напишите класс ученика, что вызывает трудности и удобное время для первого занятия.</p>
           <a
             class="button button--light"
             href="https://www.avito.ru/krasnodar/predlozheniya_uslug/repetitor_po_russkomu_yazyku_i_literature_7985501375?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing_seller"
@@ -290,8 +211,7 @@
               <path d="M5 12h14m-6-6 6 6-6 6" />
             </svg>
           </a>
-          <div class="or-line"><span>или</span></div>
-          <button class="button button--ghost" type="button" data-copy-message>
+          <button class="button button--outline" type="button" data-copy-message>
             Скопировать текст заявки
           </button>
           <p class="copy-status" aria-live="polite"></p>
@@ -300,8 +220,8 @@
     </main>
 
     <footer class="footer">
-      <span>Помогаю полюбить предмет и поверить в свои силы</span>
-      <span>© Елизавета Александровна</span>
+      <span>Елизавета Александровна</span>
+      <span>русский язык и литература, онлайн</span>
     </footer>
 
     <script src="./script.js"></script>
