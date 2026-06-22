@@ -39,8 +39,12 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__copy">
-          <h1 id="hero-title">Русский язык и литература без тревоги и пробелов</h1>
+        <div class="hero__copy" data-reveal>
+          <h1 id="hero-title">
+            Русский язык<br />
+            и литература —
+            <em>понятно, интересно, уверенно.</em>
+          </h1>
           <p class="hero__lead">
             Онлайн-занятия для учеников 4-7 классов: спокойно разбираем правила,
             тексты и домашние задания, чтобы ребёнок понимал предмет, а не просто
@@ -65,7 +69,7 @@
           </div>
         </div>
 
-        <figure class="hero__portrait">
+        <figure class="hero__portrait" data-reveal="right">
           <img src="./assets/elizaveta-portrait.png" alt="Елизавета Александровна" />
           <figcaption>
             <span>Онлайн-формат</span>
@@ -73,7 +77,13 @@
           </figcaption>
         </figure>
 
-        <div class="hero__facts" aria-label="Ключевые факты">
+        <aside class="hero__issue" aria-hidden="true">
+          <span>выпуск</span>
+          <strong>/01</strong>
+          <em>русский язык<br />как искусство мысли</em>
+        </aside>
+
+        <div class="hero__facts" aria-label="Ключевые факты" data-reveal="up">
           <div>
             <span>Образование</span>
             <strong>Высшее педагогическое</strong>
@@ -93,28 +103,29 @@
         </div>
       </section>
 
-      <section class="editorial-line" aria-label="Подход">
+      <section class="editorial-line" aria-label="Подход" data-reveal>
         <p>Сначала снимаем напряжение, потом закрываем пробелы и собираем понятную систему.</p>
       </section>
 
       <section class="spread help-spread" id="help" aria-labelledby="help-title">
+        <span class="issue-rail" aria-hidden="true"><strong>/02</strong><em>чем могу помочь</em></span>
         <div class="spread__intro">
-          <span class="section-label">С чем помогаю</span>
-          <h2 id="help-title">Сложное становится рабочим, когда у темы появляется структура</h2>
+          <span class="section-label" data-reveal>С чем помогаю</span>
+          <h2 id="help-title" data-reveal>Сложное становится рабочим, когда у темы появляется структура</h2>
         </div>
 
         <div class="help-columns">
-          <article>
+          <article data-reveal>
             <span>01</span>
             <h3>Подготовка к ВПР</h3>
             <p>Разбираем формат, тренируем типовые задания и закрепляем навык без гонки и паники.</p>
           </article>
-          <article>
+          <article data-reveal>
             <span>02</span>
             <h3>Сложные темы</h3>
             <p>Орфография, пунктуация, части речи и синтаксис превращаются в понятные шаги.</p>
           </article>
-          <article>
+          <article data-reveal>
             <span>03</span>
             <h3>Домашние задания</h3>
             <p>Не просто “делаем задание”, а разбираем, как ученик сможет повторить это сам.</p>
@@ -123,11 +134,12 @@
       </section>
 
       <section class="lesson-feature" id="lesson" aria-labelledby="lesson-title">
-        <figure class="lesson-feature__photo">
+        <span class="issue-rail issue-rail--right" aria-hidden="true"><strong>/03</strong><em>занятия онлайн</em></span>
+        <figure class="lesson-feature__photo" data-reveal>
           <img src="./assets/lesson-with-child.png" alt="Занятие с ребёнком и графическим планшетом" />
         </figure>
 
-        <div class="lesson-feature__text">
+        <div class="lesson-feature__text" data-reveal="right">
           <span class="section-label">Как проходят занятия</span>
           <h2 id="lesson-title">На экране видно не только ответ, но и ход мысли</h2>
           <p>
@@ -153,7 +165,8 @@
       </section>
 
       <section class="about-trial" id="about" aria-label="О репетиторе и пробное занятие">
-        <article class="about-block">
+        <span class="issue-rail" aria-hidden="true"><strong>/04</strong><em>обо мне</em></span>
+        <article class="about-block" data-reveal>
           <span class="section-label">О репетиторе</span>
           <h2>Спокойная подача, педагогическая база и внимание к ребёнку</h2>
           <p>
@@ -168,7 +181,7 @@
           </div>
         </article>
 
-        <article class="trial-block" id="trial">
+        <article class="trial-block" id="trial" data-reveal="right">
           <span class="section-label">Первое занятие</span>
           <h2>Бесплатная диагностика 40-60 минут</h2>
           <p>Познакомимся, определим уровень знаний, обсудим цели и составим понятный план работы.</p>
@@ -177,7 +190,7 @@
       </section>
 
       <section class="faq-contact" id="faq" aria-label="Вопросы и запись">
-        <div class="faq-block">
+        <div class="faq-block" data-reveal>
           <span class="section-label">Вопросы</span>
           <h2>Перед стартом</h2>
           <div class="faq-list">
@@ -196,7 +209,7 @@
           </div>
         </div>
 
-        <aside class="contact-card" id="contact">
+        <aside class="contact-card" id="contact" data-reveal="right">
           <span>Запись</span>
           <h2>Готовы начать?</h2>
           <p>Напишите класс ученика, что вызывает трудности и удобное время для первого занятия.</p>
